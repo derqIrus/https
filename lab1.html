@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="lab1css.css">
+    <meta charset="utf-8">
+    <title>Список задач</title>
+    <style>
+        body{
+            background: #080814;
+        }
+    </style>
+</head>
+<body>
+
+<div id="myDIV" class="header">
+    <h2 id="text">Мой список</h2>
+    <script language="JavaScript" type="text/javascript">
+        function change()
+        {
+            re="rgb("+Math.round(Math.random()*256)+","+Math.round(Math.random()*256)+","+Math.round(Math.random()*256)+")"
+            text.style.color= re;
+        }
+        setInterval(change,250);
+    </script>
+    <input type="text" id="myInput" placeholder="...">
+    <span onclick="newElement()" class="addBtn">Добавить</span>
+</div>
+
+<ul id="myUL">
+    <li>Почесать кошку</li>
+    <li>Полить картошку</li>
+    <li class="checked">Сложить в лукошко</li>
+    <li>Научиться кодить</li>
+    <li>Быть спокойным</li>
+
+</ul>
+<div style="text-align: center">
+    <img src="https://picsum.photos/200"
+         width="200" height="200" alt="рандомная картинка"
+    />
+</div>
+
+</body>
+</html>

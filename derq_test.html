@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <button id="button" style="position: absolute; widht: 100px; height: 100px">Click me!</button>
+        <script>
+            const button= document.getElementById("button");
+            button.style.top = window.innerHeight/2 + "px";
+            button.style.left = window.innerWidth/2 + "px";
+            button.addEventListener("mouseenter",()=>{
+                button.style.top = (Math.random() * window.innerHeight) + "px";
+                button.style.left = (Math.random() * window.innerWidth) + "px";
+                const r = Math.floor(Math.random() * 256);
+                const g = Math.floor(Math.random() * 256);
+                const b = Math.floor(Math.random() * 256);
+                button.style.backgroundColor = ()
+            });
+</script>
+
+
+</head>
+</body>
+</html>
