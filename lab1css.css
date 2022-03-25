@@ -37,11 +37,14 @@ ul li:hover {
 
 
 ul li.checked {
-    background: #032605;
+    background: #021a03;
     color: #bbbbbb;
     text-decoration: line-through;
 }
 
+ul li.checked:hover {
+    background: #032605;
+}
 
 ul li.checked::before {
     content: '';
@@ -112,5 +115,5 @@ input {
 }
 
 .addBtn:hover {
-    background-color: #bbb;
+    background-color: #010140;
 }
