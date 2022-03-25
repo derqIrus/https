@@ -13,13 +13,14 @@
 <body>
 
 <div id="myDIV" class="header">
-    <h2 id="text">Мой список</h2>
+    <marquee id="text" behavior="alternate" truespeed scrollamount="3" scrolldelay="1" style="color: #D9470D; font-size: 50px;font-style: oblique; font-weight: bolder; line-height: 150%; text-shadow: #000000 0px 1px 1px;">Список дел</marquee>
     <script language="JavaScript" type="text/javascript">
         function change()
         {
             re="rgb("+Math.round(Math.random()*256)+","+Math.round(Math.random()*256)+","+Math.round(Math.random()*256)+")"
             text.style.color= re;
         }
+
         setInterval(change,250);
     </script>
     <input type="text" id="myInput" placeholder="...">
