@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>timer</title>
+</head>
+<body>
+<button id="start">Start</button>
+<button id="stop">Stop</button>
+<span id="currentCount"></span>
+<script>
+    let counter = 9, timerId;
+    const start = document.getElementById("start");
+    const stop = document.getElementById("stop");
+    const currentCount = document.getElementById("currentCount");
+    start.addEventListener("click", () => {
+        timerId = setInterval(() => {
+            currentCount.innerText = counter.toString();
+            counter--;
+        }, 1000);
+    })
+    stop.addEventListener("click", () => {
+        clearInterval(timerId);
+    })
+</script>
+
+</body>
+</html>
