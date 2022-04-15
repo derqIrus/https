@@ -2,6 +2,7 @@
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="lab1css.css">
+    <link rel="stylesheet" type="JavaScript" href="lab1.js">
     <meta charset="utf-8">
     <title>Список задач</title>
     <style>
@@ -14,15 +15,7 @@
 
 <div id="myDIV" class="header">
     <marquee id="text" behavior="alternate" truespeed scrollamount="3" scrolldelay="1" style="color: #111124; font-size: 50px;font-style: oblique; font-weight: bolder; line-height: 150%; text-shadow: #000000 0px 1px 1px;">Список дел</marquee>
-    <script language="JavaScript" type="text/javascript">
-        function change()
-        {
-            re="rgb("+Math.round(Math.random()*256)+","+Math.round(Math.random()*256)+","+Math.round(Math.random()*256)+")"
-            text.style.color= re;
-        }
-
-        setInterval(change,250);
-    </script>
+    <script src="lab1.js"></script>
     <input type="text" id="myInput" placeholder="...">
     <span onclick="newElement()" class="addBtn">Добавить</span>
 </div>
@@ -39,6 +32,7 @@
     <img src="https://picsum.photos/200"
          width="200" height="200" alt="рандомная картинка"
     />
+
 </div>
 
 </body>
